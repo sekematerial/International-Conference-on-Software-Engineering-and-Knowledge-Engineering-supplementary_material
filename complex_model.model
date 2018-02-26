@@ -1,0 +1,336 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.5 -M 2 -output-debug-info
+Relation:     shangnew_final
+Instances:    6715
+Attributes:   71
+              result
+              mirror
+              fork
+              moved
+              longer
+              test
+              personal
+              website
+              framework
+              tool
+              module
+              component
+              app
+              system
+              dotfiles
+              collection
+              blog
+              plugin
+              library
+              server
+              config
+              guide
+              set
+              repository
+              deprecated
+              file
+              demo
+              my
+              github
+              dot
+              simple
+              extension
+              helper
+              template
+              http
+              https
+              source
+              setting
+              listof
+              collectionof
+              setof
+              example
+              vim
+              committer
+              comunity
+              star
+              watcher
+              sample
+              university
+              school
+              practice
+              backup
+              intro
+              first
+              Tutorial
+              course
+              copy
+              nodescription
+              localization
+              storage
+              url_dot
+              url_config
+              url_doc
+              null
+              is_null
+              theme
+              resume
+              clone
+              translation
+              documentation
+              have_language
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+simple <= 0
+|   Tutorial <= 0
+|   |   dot <= 0
+|   |   |   have_language <= 0
+|   |   |   |   star <= 7
+|   |   |   |   |   committer <= 3
+|   |   |   |   |   |   watcher <= 0: FALSE (438.0/59.0)
+|   |   |   |   |   |   watcher > 0
+|   |   |   |   |   |   |   is_null <= 0: FALSE (114.0/29.0)
+|   |   |   |   |   |   |   is_null > 0
+|   |   |   |   |   |   |   |   star <= 0: TRUE (3.0)
+|   |   |   |   |   |   |   |   star > 0: FALSE (18.0/4.0)
+|   |   |   |   |   committer > 3: FALSE (36.0/1.0)
+|   |   |   |   star > 7
+|   |   |   |   |   file <= 0
+|   |   |   |   |   |   listof <= 0
+|   |   |   |   |   |   |   framework <= 0
+|   |   |   |   |   |   |   |   app <= 0
+|   |   |   |   |   |   |   |   |   is_null <= 0
+|   |   |   |   |   |   |   |   |   |   committer <= 2: FALSE (15.0/4.0)
+|   |   |   |   |   |   |   |   |   |   committer > 2
+|   |   |   |   |   |   |   |   |   |   |   committer <= 3: TRUE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   committer > 3
+|   |   |   |   |   |   |   |   |   |   |   |   watcher <= 10: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   watcher > 10: TRUE (6.0/2.0)
+|   |   |   |   |   |   |   |   |   is_null > 0: TRUE (4.0/1.0)
+|   |   |   |   |   |   |   |   app > 0: TRUE (2.0)
+|   |   |   |   |   |   |   framework > 0: TRUE (3.0)
+|   |   |   |   |   |   listof > 0: FALSE (2.0)
+|   |   |   |   |   file > 0: FALSE (4.0)
+|   |   |   have_language > 0
+|   |   |   |   mirror <= 0
+|   |   |   |   |   my <= 0
+|   |   |   |   |   |   collectionof <= 0
+|   |   |   |   |   |   |   fork <= 0
+|   |   |   |   |   |   |   |   personal <= 0
+|   |   |   |   |   |   |   |   |   url_dot <= 0
+|   |   |   |   |   |   |   |   |   |   demo <= 0
+|   |   |   |   |   |   |   |   |   |   |   example <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   test <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   url_config <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   config <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   blog <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   plugin <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   library <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   framework <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sample <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   source <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   set <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   app <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   is_null <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity <= 1: TRUE (127.0/34.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity <= 6: FALSE (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity > 6: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   is_null > 0: TRUE (126.0/52.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 0: TRUE (1467.0/355.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity <= 2: TRUE (538.0/113.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   is_null <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity <= 3: FALSE (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity > 3: TRUE (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   is_null > 0: TRUE (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 0: TRUE (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   app > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 1: TRUE (122.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   first <= 0: TRUE (17.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   first > 0: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   is_null <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 4: TRUE (120.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   repository <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 0: FALSE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 0: TRUE (17.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   repository > 0: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity > 6: TRUE (19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 1: TRUE (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 0: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 0: TRUE (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   is_null > 0: TRUE (243.0/33.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   set > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   setting <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   app <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 1: TRUE (25.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 1: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   app > 0: TRUE (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   setting > 0: FALSE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   source > 0: TRUE (36.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sample > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 1: FALSE (18.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 1: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 1: TRUE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   http <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   set <= 0: TRUE (1461.0/133.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   set > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   setof <= 0: TRUE (24.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   setof > 0: FALSE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   http > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   deprecated <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   https <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 3: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 3: TRUE (22.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   https > 0: FALSE (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   deprecated > 0: FALSE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   framework > 0: TRUE (97.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   library > 0: TRUE (152.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   plugin > 0: TRUE (152.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   blog > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   website <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity <= 26
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 0: TRUE (22.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 0: FALSE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 1: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 4: FALSE (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   comunity > 26: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   website > 0: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   config > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   repository <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   tool <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 0: FALSE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   file <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 1: TRUE (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 1: FALSE (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   file > 0: FALSE (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   tool > 0: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 4: FALSE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   repository > 0: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 5: TRUE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   url_config > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   vim <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   set <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 2: FALSE (22.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 2: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   set > 0: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   vim > 0: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   test > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   app <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   framework <= 0: FALSE (86.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   framework > 0: TRUE (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   app > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 2: FALSE (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 2: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 0: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 1: TRUE (37.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   example > 0
+|   |   |   |   |   |   |   |   |   |   |   |   watcher <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   framework <= 0: FALSE (36.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   framework > 0: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   watcher > 13: TRUE (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   demo > 0
+|   |   |   |   |   |   |   |   |   |   |   example <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   sample <= 0: FALSE (42.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   sample > 0: TRUE (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   example > 0: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   url_dot > 0
+|   |   |   |   |   |   |   |   |   |   is_null <= 0
+|   |   |   |   |   |   |   |   |   |   |   module <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   file <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   set <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   config <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 1: TRUE (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star <= 2: FALSE (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   star > 2: TRUE (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   config > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer <= 2: FALSE (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   committer > 2: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   watcher > 0: FALSE (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   set > 0: FALSE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   file > 0: FALSE (8.0)
+|   |   |   |   |   |   |   |   |   |   |   module > 0: TRUE (3.0)
+|   |   |   |   |   |   |   |   |   |   is_null > 0
+|   |   |   |   |   |   |   |   |   |   |   committer <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   star <= 1: FALSE (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   star > 1: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   |   |   committer > 1: FALSE (27.0/2.0)
+|   |   |   |   |   |   |   |   personal > 0: FALSE (25.0/5.0)
+|   |   |   |   |   |   |   fork > 0
+|   |   |   |   |   |   |   |   http <= 0
+|   |   |   |   |   |   |   |   |   star <= 0: TRUE (2.0)
+|   |   |   |   |   |   |   |   |   star > 0
+|   |   |   |   |   |   |   |   |   |   star <= 5: FALSE (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   star > 5: TRUE (3.0/1.0)
+|   |   |   |   |   |   |   |   http > 0: FALSE (7.0)
+|   |   |   |   |   |   collectionof > 0: FALSE (32.0/2.0)
+|   |   |   |   |   my > 0
+|   |   |   |   |   |   app <= 0: FALSE (222.0/23.0)
+|   |   |   |   |   |   app > 0
+|   |   |   |   |   |   |   committer <= 1: FALSE (11.0/3.0)
+|   |   |   |   |   |   |   committer > 1: TRUE (3.0)
+|   |   |   |   mirror > 0: FALSE (32.0)
+|   |   dot > 0: FALSE (56.0)
+|   Tutorial > 0: FALSE (82.0)
+simple > 0: FALSE (261.0)
+
+Number of Leaves  : 	109
+
+Size of the tree : 	217
+
+
+Time taken to build model: 1.33 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        5709               85.0186 %
+Incorrectly Classified Instances      1006               14.9814 %
+Kappa statistic                          0.6495
+Mean absolute error                      0.2376
+Root mean squared error                  0.3446
+Relative absolute error                 52.2025 %
+Root relative squared error             72.2524 %
+Total Number of Instances             6715     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.956    0.345    0.837      0.956    0.892      0.665    0.872     0.899     TRUE
+                 0.655    0.044    0.888      0.655    0.754      0.665    0.872     0.818     FALSE
+Weighted Avg.    0.850    0.240    0.855      0.850    0.844      0.665    0.872     0.871     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4170  194 |    a = TRUE
+  812 1539 |    b = FALSE
+
